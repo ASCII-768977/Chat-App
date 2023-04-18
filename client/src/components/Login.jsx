@@ -105,20 +105,24 @@ const Login = ({ setUser, setSecret }) => {
           maximum 10 users can be created.
         </p>
         <p className="intro-text">
-          1. First, click on the plus button to create a new chat room. If you
-          want to use ChatGPT 3.5. Please set the room name with prefix of
-          "AiAssist_". For example, "AiAssist_weather". The ai will only work
-          with this prefix.
+          1. If you create a normal room. You can invite other users to join the
+          room by clicking the right sidebar -&gt; Members.
         </p>
         <p className="intro-text">
-          2. Once you type text into the input box. After one second the ai will
+          2.If you want to use ChatGPT, click on the plus button on top left
+          sidebar to create a new chat room. Please set the room name with
+          prefix of
+          <span style={{ color: "lightRed" }}>"AiAssist_"</span>. For example,
+          "AiAssist_weather". The ai will only work with this prefix. Then go to
+          the right sidebar click members and invite the ai
+          <span style={{ color: "lightRed" }}>"ChatGPT3.5"</span>.
+        </p>
+        <p className="intro-text">
+          3. Once you type text into the input box. After one second the ai will
           try to complete your sentence. Press tab to take the ai
           auto-completion or press enter to send the message.
         </p>
-        <p className="intro-text">
-          3. If you create a normal room. You can invite other users to join the
-          room by clicking the right sidebar -&gt; Members.
-        </p>
+
         <p className="intro-text">
           4. You can also send picture, gif and pdf through the attachment
           button aside the send message icon.
