@@ -32,6 +32,7 @@ const Login = ({ setUser, setSecret }) => {
     if (resultLogin.data?.response) {
       setUser(username);
       setSecret(password);
+      toast.success("Login success, wait for redirect...");
     } else if (resultLogin.error) {
       toast.error("User doesn't exist or wrong credentials");
     }
@@ -93,12 +94,14 @@ const Login = ({ setUser, setSecret }) => {
         <p className="intro-text">
           There are 3 test users are pre-set.
           <br />
+          <br />- username: forrest &nbsp;&nbsp;&nbsp; password: 1234
+          <span style={{ color: "red" }}>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recommended
+          </span>
           <br />
-          - username: forrest , password: 1234
+          - username: bob &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; password: 1234
           <br />
-          - username: bob , password: 1234
-          <br />
-          - username: alice , password: 1234
+          - username: alice &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; password: 1234
           <br />
           <br />
           You can try to create your own user or just use test users, only
@@ -112,10 +115,10 @@ const Login = ({ setUser, setSecret }) => {
           2.If you want to use ChatGPT, click on the plus button on top left
           sidebar to create a new chat room. Please set the room name with
           prefix of
-          <span style={{ color: "lightRed" }}>"AiAssist_"</span>. For example,
+          <span style={{ color: "red" }}> "AiAssist_"</span>. For example,
           "AiAssist_weather". The ai will only work with this prefix. Then go to
           the right sidebar click members and invite the ai
-          <span style={{ color: "lightRed" }}>"ChatGPT3.5"</span>.
+          <span style={{ color: "red" }}> "ChatGPT3.5"</span>.
         </p>
         <p className="intro-text">
           3. Once you type text into the input box. After one second the ai will
