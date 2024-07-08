@@ -116,9 +116,9 @@ const Login = ({ setUser, setSecret }) => {
           sidebar to create a new chat room. Please set the room name with
           prefix of
           <span style={{ color: "red" }}> "AiAssist_"</span>. For example,
-          "AiAssist_weather". The ai will only work with this prefix. Then go to
+          "AiAssist_Test". The ai will only work with this prefix. Then go to
           the right sidebar click members and invite the ai
-          <span style={{ color: "red" }}> "ChatGPT3.5"</span>.
+          <span style={{ color: "red" }}> "ChatGPT4o"</span>.
         </p>
         <p className="intro-text">
           3. Once you type text into the input box. After one second the ai will
